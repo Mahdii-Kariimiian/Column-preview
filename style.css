@@ -1,0 +1,153 @@
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+
+img, 
+picture, 
+video, 
+canvas, 
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, 
+button, 
+textarea, 
+select {
+  font: inherit;
+}
+
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --Verylightgray: hsla(0, 0%, 95%); /* (paragraphs) */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Lexend Deca', sans-serif;
+    Font-size: 15px;
+    line-height: 1.5;
+
+    min-height: 100vh;
+  }
+
+  article {
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    margin-block: 100px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  /* background-colors */
+
+  .card__1 {
+    background-color: var(--Brightorange);
+  }
+
+  .card__2 {
+    background-color: var(--Darkcyan);
+  }
+
+  .card__3 {
+    background-color: var(--Verydarkcyan);
+  }
+
+  /* background-colors */
+
+  .cards {
+    padding: 2rem 3rem;
+    width: 100%;
+    color: white;
+  }
+
+  .cards > * {
+    margin-block: 1.5rem;
+  }
+
+  /* text styling */
+
+  .card__title {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: var(--Verylightgray);
+  }
+
+  .card__description {
+    color: var(--Transparentwhite);
+    line-height: 1.5rem;
+  }
+
+  /* text styling */
+
+  .card__btn {
+    white-space: nowrap;
+    margin:0;
+    border: 2px solid white;
+    padding: .6rem 1.7rem;
+    border-radius: 150px;
+  }
+  
+    /* buttons colors */
+.btn-1 {
+    color: var(--Brightorange);
+}
+
+.btn-2 {
+    color: var(--Darkcyan);
+}
+
+.btn-3 {
+    color: var(--Verydarkcyan);
+}
+
+  /* buttons colors */
+
+  .card__btn:hover {
+    background-color: transparent;
+    color:white;
+    cursor: pointer;
+  }
+
+  @media (min-width:500px) {
+
+    article {
+        max-width: 950px;
+        flex-direction: row;
+    }
+  
+    .card__btn {
+    margin-top: 3rem;
+  }
+}
+ 
