@@ -52,6 +52,8 @@ body {
     justify-content: center;
     align-items: center;
 
+    background-color: var(--Verylightgray);
+
     font-family: 'Lexend Deca', sans-serif;
     Font-size: 15px;
     line-height: 1.5;
